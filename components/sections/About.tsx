@@ -111,6 +111,7 @@ export default function AboutPage() {
                     height={320}
                     width={320}
                     quality={100}
+                    onLoad={() => setImageLoaded(true)}
                   />
                 </div>
               </div>
