@@ -29,7 +29,7 @@ export default function Navbar() {
         isScrolled
           ? "bg-base-100/80 backdrop-blur-md shadow-md"
           : "bg-transparent"
-      }`}
+      } px-10`}
     >
       <div className="navbar-start">
         <Link href="/" className="btn btn-ghost flex items-center gap-5">
