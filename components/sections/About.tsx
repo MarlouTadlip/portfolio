@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -25,6 +25,7 @@ export default function AboutPage() {
   const imageRef = useRef(null);
   const contentRef = useRef(null);
   const skillsRef = useRef(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -85,7 +86,6 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-base-100 pt-24 pb-16">
       <div className="container mx-auto px-6 max-w-6xl">
-        {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4 bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
             About Me
@@ -99,6 +99,11 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-linear-to-r from-primary to-secondary rounded-full blur-2xl opacity-30"></div>
               <div className="avatar relative">
                 <div className="w-64 md:w-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4">
+                  {!imageLoaded && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-base-300 rounded-full">
+                      <span className="loading loading-spinner loading-lg text-primary"></span>
+                    </div>
+                  )}
                   <Image
                     src="/images/profile.jpg"
                     alt="Marlou Tadlip"
@@ -113,7 +118,9 @@ export default function AboutPage() {
           </div>
 
           <div ref={contentRef} className="space-y-6">
-            <h2 className="text-3xl font-bold">Hi, I&apos;m Marlou Tadlip!</h2>
+            <h2 className="text-3xl font-bold">
+              Hi, I&apos;m Marlou C. Tadlip!
+            </h2>
             <p className="text-lg leading-relaxed text-base-content/80">
               I&apos;m an aspiring software engineer with a passion for building
               innovative solutions and creating beautiful digital experiences. I
