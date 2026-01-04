@@ -124,14 +124,13 @@ export default function AboutPage() {
             </h2>
             <p className="text-lg leading-relaxed text-base-content/80">
               I&apos;m an aspiring software engineer with a passion for building
-              innovative solutions and creating beautiful digital experiences. I
-              love turning ideas into reality through clean, efficient code.
+              scalable and user-friendly design. I love turning ideas into
+              reality through clean, efficient code.
             </p>
             <p className="text-lg leading-relaxed text-base-content/80">
               Currently focused on web development, I&apos;m constantly learning
-              new technologies and improving my skills. When I&apos;m not
-              coding, you can find me exploring new tech trends, contributing to
-              open source, or working on personal projects.
+              new trends and improving my skills. I&apos;m also into game
+              development.
             </p>
             <div className="flex gap-4 pt-4">
               <a href="/contact" className="btn btn-primary">
