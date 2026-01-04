@@ -87,7 +87,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-base-100 pt-24 pb-16">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4 bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-4 bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
             About Me
           </h1>
           <p className="text-lg text-base-content/70">Get to know me better</p>
