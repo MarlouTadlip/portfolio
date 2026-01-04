@@ -95,7 +95,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:tadlipmarlou@gmail.com"
+            href="https://www.facebook.com/marlou.tadlip"
             className="btn btn-ghost btn-circle hover:btn-primary transition-all"
           >
             <svg
