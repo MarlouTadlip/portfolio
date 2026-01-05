@@ -124,8 +124,8 @@ export default function AboutPage() {
             </h2>
             <p className="text-lg leading-relaxed text-base-content/80">
               I&apos;m an aspiring software engineer with a passion for building
-              scalable and user-friendly design. I love turning ideas into
-              reality through clean, efficient code.
+              scalable and user-friendly design applications. I love turning
+              ideas into reality through clean, efficient code.
             </p>
             <p className="text-lg leading-relaxed text-base-content/80">
               Currently focused on web development, I&apos;m constantly learning
